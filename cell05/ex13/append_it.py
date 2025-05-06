@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 
-import sys
-
+import sys 
+import re
 arg = sys.argv
-check = len(arg)
-word = ["ism"]
-if check <=1 :
+check  = len(arg)
+array = []
+if check < 2:
     print("none")
 else:
-    for i in range (1, check):
-        lenge = len(arg[i])
-        now = arg[i][lenge-3:lenge]
-        match arg[i]:
-            case "ism":
-                print(f"{arg[i]}ism")
-            case _:
-                continue
+    for i in range(1,check):
+        now = len(arg[i])
+        if re.search("ism$",arg[i]):
+            continue
+        else:
+            print(f"{arg[i]}ism")
+
