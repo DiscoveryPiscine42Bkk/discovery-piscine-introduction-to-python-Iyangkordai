@@ -6,7 +6,6 @@ dupout_family = {
     "david": "red",
     "franck": "red"
 }
-print(dupout_family.items())
 ans = []
 class red:
     def find_the_redheads(self,dict):
