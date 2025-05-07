@@ -2,4 +2,4 @@
 
 x = input("Give me some word : ")
 x = x.upper()
-print(x , end="")
+print(x)
