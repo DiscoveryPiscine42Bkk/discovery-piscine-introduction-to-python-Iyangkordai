@@ -10,10 +10,8 @@ else:
         print(f"Table de {i}: ",  end="")
         y = 0
         while y < 11:
-            if y != 10:
-                print(f"{i*y}" , end=" ")
-            else:
-                print(i*y)
+            print(f"{i*y}" , end=" ")
             y += 1
+        print("")
         i += 1
          
